@@ -121,6 +121,8 @@ $ git clone git@github.com:JoshCheek/1508.git ~/code/1508-echo
 Seeing Is Believing
 -------------------
 
+Make sure you did the steps earlier where you installed the `seeing_is_believing` gem (in the [Ruby](#ruby) section).
+
 In Atom:
 
 * Open up config: Command + comma
