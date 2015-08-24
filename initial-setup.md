@@ -118,6 +118,26 @@ This is where I'm planning to put my various notes and more detailed plans than 
 $ git clone git@github.com:JoshCheek/1508.git ~/code/1508-echo
 ```
 
+Seeing Is Believing
+-------------------
+
+In Atom:
+
+* Open up config: Command + comma
+* Go to install
+* Search for "seeing"
+* Click "install"
+* Open a new window (Command + N)
+* Set the language to Ruby (Shift + Control + L), type "ruby", select it
+* Type `1+1` in the document
+* Try running Seeing Is Believing aginst it (this will probably fail) `Command + Option + b`
+* Restart Atom
+* edit your configuration: `atom /Users/josh/.atom/config.cson`
+* Find the bit that says "seeing-is-believing", and the key under it that says "ruby-command".
+  Set the value to `"/Users/josh/code/dotfiles/bin/sib_ruby"`
+  (replace my name with your name)
+* Do the steps above again: (new window, language: Ruby, `1+1`, run with SiB), it should work.
+
 Exercism
 --------
 
