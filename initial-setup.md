@@ -10,12 +10,19 @@ This is a "terminal emulator" ie it pretends to be the ancient
 shitty hardware that all our tools expect to run on.
 
 * Download from [https://iterm2.com/](https://iterm2.com/)
+* Make a bin directory to put programs into: `$ mkdir ~/bin`
+* Make a code directory to put various projects and things into: `$ mkdir ~/code`
+* Get all my configuration shit: `git clone git@github.com:JoshCheek/dotfiles-for-students.git ~/code/dotfiles`
 * Get a not shitty bash profile (note: If you've customized your bash profile, you'll need to consolidate the two...
   don't run the command below, it will blow away your changes. If you don't know whether you have, then you haven't, you're fine.
-  `$ curl 'https://gist.githubusercontent.com/JoshCheek/e7b31cb3015e9255a4bc/raw/d4b7b823b7bdc22286919f8c367b8c640d5f079f/bash_profile.sh' > ~/.bash_profile`
+  `$ ln -s "$HOME/code/dotfiles/bash_profile" "$HOME/.bash_profile"`
 * Close the window and open a new one, you should see colour.
-* Make a bin directory to put programs into: `mkdir ~/bin`
+* Make the directory we'll need for the shell we're going to use
 
+  ```ruby
+  $ mkdir ~/.config
+  $ ln -s "$HOME/code/dotfiles/fish" "$HOME/.config/fish"
+  ```
 
 Make your computer not annoyingly slow
 ---------------------------------------
@@ -102,8 +109,14 @@ Better Iterm
   * Click on Load Presets
   * Choose "Solarized Dark Higher Contrast" (you can play with the others, but default to this one)
 
-Fish Configuration
+Clone my 1508 repo
 ------------------
+
+This is where I'm planning to put my various notes and more detailed plans than what will be on http://today.turing.io
+
+```
+$ git clone git@github.com:JoshCheek/1508.git ~/code/1508-echo
+```
 
 Exercism
 --------
