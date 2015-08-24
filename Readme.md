@@ -11,17 +11,20 @@
   * 12:00 Student Introduction / Lunch
   *  1:00 Success at Turing
   -  2:00 (Echo) Tooling setup
-    * http://tutorials.jumpstartlab.com/topics/environment/environment.html
-    * Homebrew
-    * Ruby
-    * Pry
-    * Atom / SiB
-    * [iTerm](https://github.com/JoshCheek/team_grit/blob/master/cheatsheets_other/iterm.md)
-    * Fish
-    * [Shell](https://github.com/JoshCheek/team_grit/blob/master/cheatsheets_other/shell.md)
+    * https://github.com/JoshCheek/1508/blob/master/initial-setup.md
   -  3:00 (Echo) Getting started with Exercism
-  * (Echo) Homework: [Superfizz](https://github.com/turingschool/challenges/blob/master/super_fizz.markdown)
-  * CLI exercises
+  * (Echo) Homework:
+    * [Shell](https://github.com/JoshCheek/1508/blob/master/shell.md)
+      - Read this whole document
+      - Memorize the keybindings for the shell
+      - Memorize the keybindings for the Mac
+      - You will know you have memorized them sufficiently when you can perform them from memory
+      - It would be good for you to go through the katas, as well, but not necessary
+    - Read about hard / soft skills in The Little Book of Talent
+      - Chapter 7: Before you start, figure out if it's a hard skill or a soft skill
+      - Chapter 8: To build hard skills, work like a careful carpenter
+      - Write a paragraph about each, describing what it would look like to apply these skills to your time here at Turing
+    - [Superfizz](https://github.com/turingschool/challenges/blob/master/super_fizz.markdown)
 * 25 Aug
   -  9:00 (Echo) Superfizz recap
   -  9:30 (Echo) String & Integer riddles
