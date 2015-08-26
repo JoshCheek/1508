@@ -26,11 +26,76 @@
       - Write a paragraph about each, describing what it would look like to apply these skills to your time here at Turing
     - [Superfizz](https://github.com/turingschool/challenges/blob/master/super_fizz.markdown)
 * 25 Aug
-  -  9:00 (Echo) Superfizz recap
-  -  9:30 (Echo) String & Integer riddles
+  - 8:30 (Echo) continue from yesterday... (we got preempted by posse time >.<)
+
+    [This form](https://docs.google.com/forms/d/1KSt9ZFppCPeCfhaakI6nEkJ12lO6vknhnw2RWUJvwD8/viewform)
+    should be completed.
+
+    You should all be invited to the 1508-echo channel on Slack... if not, tell Josh.
+
+    Pull changes since yesterday:
+
+    ```
+    $ cd ~/code/dotfiles
+    $ git pull
+
+    $ cd ../1508-echo
+    $ git pull
+    ```
+
+    [Continue from yesterday](https://github.com/JoshCheek/1508/blob/ecb2775f16d239b4d43d7423161d8e7295751a59/initial-setup.md):
+
+    * Set up Atom
+    * Set up Seeing Is Believing
+    * Github public keys
+    * Exercism
+
+    BONUS: Theme your terminal (if we have time)
+  - 9:00 (Echo) Superfizz recap
+
+    Meet Josh in the front of Classroom A.
+
+    [https://github.com/turingschool/challenges/blob/master/super_fizz.markdown](https://github.com/turingschool/challenges/blob/master/super_fizz.markdown)
+  - 9:30 (Echo) String & Integer riddles
+
+    Continue with Josh in the front of Classroom A.
+
+    NOTE: If you don't know what strings / integers are, let me know.
+
+    Launch pry and see what methods exist on a string:
+
+    (if yours doesn't work: `$ gem install pry` and try again)
+
+    ```ruby
+    [1] pry(main)> string = "hello"
+    => "hello"
+
+    [2] pry(main)> ls string
+    Comparable#methods: <  <=  >  >=  between?
+    String#methods:
+    %            chr             gsub       rindex       succ!
+    *            clear           gsub!      rjust        sum
+    # ...
+    ```
+
+    As you work your way through this, think about what names you might choose
+    to for the methods that do these jobs. Then see if those names are in the list.
+    If they are, try them out and see if they give you what you expect.
   * 10:30 Problems, solutions, algorithms
-  *  1:00 Scavenger hunt
-  * (Echo) Homework: Simple Search
+  * 1:00 Scavenger hunt
+  * Homework
+    * Find a way to improve the environment before you leave today.
+      Take a level of ownership as if this was your home, and empower yourself to make something better.
+      Maybe you see someone struggling with something and you can offer help (opening a door,
+      figuring out a challenge, installing their environment).
+      Maybe you see something that is causing an issue for students generally (a full trash can,
+      a furniture layout that is causing logistical issues, a cord that people are tripping over,
+      an empty pot of coffee, an issue with the scavenger hunt implementation).
+      Whatever it is, empower yourself to improve it, and do so.
+      Make the environment better for others, and express appreciation as they make it better for you.
+      Invest in your community.
+    * [Strings and Integers quiz](https://github.com/turingschool/challenges/blob/master/strings_and_integers_quiz.markdown)
+    * Headshots tomorrow
 * 26 Aug
   *  9:00 Introducing Arrays
   * 10:30 Introducing Hashes
