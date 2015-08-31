@@ -1,5 +1,8 @@
 # =====  Blowing Bubbles - Part 2 =====
 #
+# Video of me going through this, so you can see what's in my brain about how it looks:
+# https://vimeo.com/137837005
+#
 # Inspiration:
 # [Ana](https://www.youtube.com/watch?v=KMrvR836TFI) and [蘇仲太](https://www.youtube.com/watch?v=QseWXpkaGTY)
 #
