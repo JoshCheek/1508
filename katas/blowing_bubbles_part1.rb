@@ -82,10 +82,6 @@ array # => ["a", "b", "c", "d", "e"]
 # =====  Remove the `right` variable  =====
 
 
-# =====  Constraint: You may only use a single equal sign  =====
-# Remove the `left` and `right` variables, so that there is only one equal sign
-
-
 # =====  Inline if statement  =====
 # hint:
 #   if a
