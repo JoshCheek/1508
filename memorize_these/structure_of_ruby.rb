@@ -18,3 +18,5 @@
     return_value:    ...,
     next_binding:    ...,
   }
+
+# You will know that you have memorized this sufficiently when you can write it out from memory
