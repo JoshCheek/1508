@@ -8,6 +8,33 @@ require 'line_numbers'
 # don't require the whole program to fit on the screen
 # display the returns better
 
+
+# If I want to show C source code:
+#
+# require 'yard'
+# prydoc_paths = Gem.find_latest_files('pry-doc')
+#
+# if !prydoc_paths || prydoc_paths.empty?
+#   raise "You need to `gem install pry-doc`"
+# end
+#
+# prydoc_path  = prydoc_paths.find { |path| File.basename(path) == 'pry-doc' }
+# path         = prydoc_path + '/core_docs_22'
+# registry     = YARD::Registry.load_yardoc path
+# puts registry['Class#new'].source
+#
+# # >> VALUE
+# # >> rb_class_new_instance(int argc, const VALUE *argv, VALUE klass)
+# # >> {
+# # >>     VALUE obj;
+# # >>
+# # >>     obj = rb_obj_alloc(klass);
+# # >>     rb_obj_call_init(obj, argc, argv);
+# # >>
+# # >>     return obj;
+# # >> }
+
+
 filename  = File.expand_path ARGV[0]
 line_nums = LineNums.new(filename)
 
