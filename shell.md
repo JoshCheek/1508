@@ -142,6 +142,7 @@ These work basically everywhere you can enter text in a mac
   C-a           # go to the beginning of the line
   C-e           # go to the end of the line
   C-k           # "kill" to the end of the line (like cut, but doesn't use the system pasteboard)
+  C-u           # "kill" to the beginning of the line
   C-y           # "yank" the previously killed text
 
 Other useful ones
@@ -158,8 +159,8 @@ Other useful ones
 [Example: https://s3.amazonaws.com/josh.cheek/screencasts/rachel/navigation.mp4](https://s3.amazonaws.com/josh.cheek/screencasts/rachel/navigation.mp4)
 
 Randomly pound the keyboard for a bit.  Then go to the beginning of the line.
-The end of the line. Kill the line. Yank the line. Kill. Yank. Beginning. Kill. End.
-Back 1 word. Back 1 word. Forward 1 word. Forward 1 word. Beginning.
+The end of the line. Kill the line. Yank the line. Kill. Yank. Beginning. Kill.
+Yank. Beginning. End.  Back 1 word. Back 1 word. Forward 1 word. Forward 1 word. Beginning.
 Forward a word until you are at the end. Delete the last word.
 Back a word. Delete word. Back a word. End. Kill.
 
