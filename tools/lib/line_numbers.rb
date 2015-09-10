@@ -13,11 +13,12 @@ require 'io/console'
 # :raised_exception]]
 
 class LineNums
-  attr_accessor :path, :events
+  attr_accessor :path, :events, :current_index
 
   def initialize(path)
-    self.path = path
-    self.events = []
+    self.path          = path
+    self.events        = []
+    self.current_index = 0
   end
 
   def raw_body
@@ -25,14 +26,30 @@ class LineNums
   end
 
   def record(event)
-    events << event
+    type = event[:event]
+    unless type == :c_call || type == :c_return
+      events << event
+    end
   end
 
-  def display_each(&block)
-    events.each do |event|
-      highlighted = highlighted_body(line: event[:lineno])
-      block.call(highlighted, event)
-    end
+  def done?
+    event.nil?
+  end
+
+  def event
+    events[current_index]
+  end
+
+  def highlighted
+    highlighted_body(line: event[:lineno])
+  end
+
+  def forward
+    self.current_index += 1
+  end
+
+  def backward
+    self.current_index -= 1
   end
 
   def highlighted_body(line:-1)
@@ -48,6 +65,7 @@ class LineNums
       gutter = "\e[41;37m ->" if line == lineno
       gutter << ("%4d\e[0m: #{code}\r" % lineno)
       gutter
-    }[min_index, max_index].join
+    }.join
+    # [min_index, max_index].join
   end
 end
