@@ -1,0 +1,31 @@
+#!/usr/bin/env ruby
+$LOAD_PATH.unshift File.expand_path('../lib', __dir__)
+require 'line_numbers'
+
+filename  = File.expand_path ARGV[0]
+line_nums = LineNums.new(filename)
+
+tp = TracePoint.new do |tp|
+  next unless tp.path == filename
+  line_nums.record event:            tp.event,
+                   lineno:           tp.lineno,
+                   method_id:        tp.method_id,
+                   defined_class:    tp.defined_class,
+                   binding:          tp.binding,
+                   self:             tp.self
+end
+
+tp.enable
+
+require File.expand_path(filename)
+
+at_exit do
+  tp.disable
+  $stdin.raw do
+    line_nums.display_each do |highlighted, event|
+      $stdout.print "\e[H\e[2J#{highlighted}\n\n\r\e[45m#{event[:event]}\r\n\n"
+      $stdout.print "\e[41;37m Press a key \e[0m"
+      break if $stdin.getc.ord == 3 # C-c
+    end
+  end
+end

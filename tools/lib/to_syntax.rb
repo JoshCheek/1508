@@ -1,4 +1,5 @@
 require 'parser/current'
+
 class ToSyntax
   # receives raw ruby code (a String)
   # return a data structure that can be directly converted into json
@@ -206,9 +207,3 @@ class ToSyntax
     end
   end
 end
-
-
-require 'pp'
-raise "Provide a filename! <3" if ARGV.empty?
-body = File.read ARGV[0]
-pp ToSyntax.call body
