@@ -56,7 +56,7 @@ class LineNums
     min_index   = [line-10, 0].max
     max_index   = min_index+20
 
-    formatter   = Rouge::Formatters::Terminal256.new theme: 'colorful'
+    formatter   = Rouge::Formatters::Terminal256.new theme: 'molokai'
     lexer       = Rouge::Lexers::Ruby.new
     tokens      = lexer.lex raw_body
     highlighted = formatter.format(tokens)

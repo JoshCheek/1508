@@ -1,6 +1,6 @@
 class List
-  def unshift(joke)
-    @head = {data: joke, next_node: @head}
+  def unshift(data)
+    @head = {data: data, next_node: @head}
   end
 
   def count
